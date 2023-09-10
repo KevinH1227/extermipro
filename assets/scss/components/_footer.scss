@@ -1,0 +1,122 @@
+/*----- footer section start -----*/
+.footer-widget-area {
+    margin-bottom: -5px;
+}
+.widget-title {
+    font-weight: 700;
+    margin: -6px 0 25px;
+    // responsive
+    @media #{$md-device, $sm-device} {
+        margin: -6px 0 20px;
+    }
+}
+.widget-body {
+    .desc {
+        font-size: 14px;
+        color: $black-soft;
+    }
+}
+.contact-info {
+    padding-top: 12px;
+    li {
+        font-size: 14px;
+        color: $black-soft;
+        line-height: 1;
+        margin-bottom: 13px;
+        a {
+            color: $black-soft;
+            &:hover {
+                color: $theme-color;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+.useful-links {
+    li {
+        line-height: 1;
+        margin-bottom: 15px;
+        a {
+            color: $black-soft;
+            font-size: 13px;
+            &:hover {
+                color: $theme-color;
+                padding-left: 10px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// newsletter form style
+.newsletter-inner {
+    margin-top: 15px;
+    margin-bottom: 14px;
+    form {
+        position: relative;
+    }
+    .news-field {
+        font-size: 14px;
+        width: 100%;
+        height: 44px;
+        display: block;
+        border: none;
+        line-height: 1;
+        color: $black-soft;
+        background-color: #e5e5e5;
+        position: relative;
+        padding: 5px 55px 5px 10px;
+    }
+    .news-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 18px;
+        height: 44px;
+        color: $white;
+        line-height: 1;
+        font-weight: 400;
+        padding: 0 15px;
+        display: inline-block;
+        background-color: $theme-color;
+        &:hover {
+            background-color: $black-soft;
+        }
+    }
+}
+
+// widget-social links
+.widget-social-link {
+    a {
+        color: $black-soft;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        margin-right: 15px;
+        &:hover {
+            color: $theme-color;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// footer bottom
+.footer-bottom {
+    background-color: #dadada;
+    padding: 14px 0;
+}
+.copyright-text {
+    p {
+        font-size: 14px;
+        color: $black-soft;
+        a {
+            color: $theme-color;
+        }
+    }
+}
+/*----- footer section end -----*/

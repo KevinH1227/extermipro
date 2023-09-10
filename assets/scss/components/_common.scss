@@ -1,0 +1,274 @@
+/*------- common css start -------*/
+.blue-bg {
+    background-color: #011a48;
+}
+.gray-bg {
+    background-color: #f3f5f6;
+}
+
+/*----- pest control style start -----*/
+.pest {
+    &-item {
+        margin-bottom: -3px;
+        &:hover {
+            .pest-icon {
+                border-color: $theme-color;
+            }
+        }
+    }
+    &-icon {
+        width: 110px;
+        height: 110px;
+        text-align: center;
+        line-height: 90px;
+        border: 10px solid $white;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    &-title {
+        margin-top: 18px;
+        a {
+            color: #5f5f5f;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*----- pest control style end -----*/
+
+/*------ counter up start ------*/
+.counterup-area {
+    padding: 100px 0 105px;
+    // responsive
+    @media #{$sm-device} {
+        padding: 52px 0 60px;
+    }
+}
+.counterup-item {
+    text-align: center;
+    span {
+        color: $theme-color;
+        font-size: 48px;
+        font-weight: 600;
+        @media #{$sm-device} {
+            font-size: 36px;
+        }
+    }
+    h4 {
+        font-weight: 400;
+        padding-top: 5px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            font-size: 16px;
+        }
+    }
+}
+.odometer {
+    margin-left: -25px;
+}
+.odometer-inside {
+    position: relative;
+    &::after {
+        top: 0;
+        left: 100%;
+        content: '+';
+        position: absolute;
+        
+    }
+}
+/*------ counter up end ------*/
+
+/*------- appointment form start -------*/
+.appoint-form-wrapper {
+    border-radius: 5px;
+    padding: 60px;
+    // responsive
+    @media #{$xs-device} {
+        padding: 60px 15px;
+    }
+    &__style-2 {
+        padding: 40px 30px 55px;
+        max-width: 408px;
+        margin: 0 auto;
+        text-align: center;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            margin-top: 62px;
+        }
+        .appoint-title {
+            border-bottom: 1px solid $bdr-color;
+            margin-bottom: 40px;
+            // responsive
+            @media #{$md-device, $xxs-device} {
+                font-size: 19px;
+            }
+        }
+        .btn-app {
+            background-color: $white;
+            border-radius: 40px;
+            color: $black-soft;
+            height: inherit;
+            padding: 14px 30px;
+            &:hover {
+                color: $white;
+                background-color: $black-soft;
+            }
+        }
+    }
+}
+.appoint-title {
+    color: $white;
+    margin-top: -5px;
+    padding-bottom: 30px;
+    // responsive
+    @media #{$xxs-device} {
+        font-size: 22px;
+    }
+}
+.appoint-form-inner {
+    .appoint-btn {
+        padding-left: 10px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            padding-left: 0;
+        }
+        .btn-app {
+            // responsive
+            @media #{$md-device, $sm-device} {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+.customer {
+    &-appoint-box {
+        background-color: $white;
+        // max-width: 770px;
+        max-width: 840px;
+        width: 100%;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            background-color: transparent;
+        }
+        .bdr-right {
+            border-right: 1px solid $bdr-color;
+        }
+        &__style-2 {
+            background-color: transparent;
+            max-width: inherit;
+            .app-txt-field {
+                color: $white;
+                width: 100%;
+                height: 50px;
+                border: 1px solid $white;
+                margin-bottom: 30px;
+                background-color: transparent;
+                padding: 0 20px;
+            }
+            ::-webkit-input-placeholder {
+                color: $white;
+            }
+              ::-moz-placeholder {
+                color: $white;
+            }
+        }
+    }
+    &-service-type {
+        width: 30%;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            width: 100%;
+            margin-bottom: 20px;
+            float: left;
+        }
+        .nice-select {
+            width: 100%;
+            height: 70px;
+            border: none;
+            border-radius: 0;
+            line-height: 70px;
+            .list {
+                width: 100%;
+            }
+            &:after {
+                height: 8px;
+                width: 8px;
+                border-bottom: 1px solid #999;
+                border-right: 1px solid #999;
+            }
+        }
+    }
+    &-name {
+        width: 20%;
+        height: 70px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            width: 100%;
+            margin-bottom: 20px;
+            float: left;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 5px 10px;
+            border: none;
+        }
+    }
+    &-phone {
+        width: 20%;
+        height: 70px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            width: 100%;
+            margin-bottom: 20px;
+            float: left;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 5px 10px;
+            border: none;
+        }
+    }
+    &-email {
+        width: 30%;
+        height: 70px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            width: 100%;
+            margin-bottom: 20px;
+            float: left;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 5px 10px;
+            border: none;
+        }
+    }
+}
+  
+/*------- appointment form end -------*/
+
+/*------- choose us area start -------*/
+.choose {
+    &-item {
+        margin-bottom: -5px;
+        // responsive
+        @media #{$xs-device} {
+            padding: 0 30px;
+        }
+    }
+    &-text {
+        .title {
+            padding: 32px 0  24px;
+        }
+    }
+}
+/*------- choose us area end -------*/
+
+/*------- common css end -------*/

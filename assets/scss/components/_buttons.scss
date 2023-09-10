@@ -1,0 +1,44 @@
+/*------- Buttons Style here -------*/
+.btn {
+    color: $white;
+    line-height: 1;
+    border-radius: 0;
+    font-family: $heading-font;
+    &-hero {
+        background-color: $theme-color;
+        padding: 20px 34px;
+        // responsive
+        @media #{$sm-device} {
+            padding: 15px 25px;
+        }
+        &:hover {
+            color: $white;
+            background-color: $black-soft;
+        }
+    }
+    &-app {
+        height: 70px;
+        background-color: $theme-color;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $heading-font;
+        padding: 0 45px;
+        &:hover {
+            background-color: $black-soft;
+            color: $white;
+        }
+    }
+    &-theme {
+        font-size: 14px;
+        color: $white;
+        font-weight: 600;
+        background-color: $theme-color;
+        padding: 18px 30px;
+        border-radius: 50px;
+        &:hover {
+            color: $white;
+            background-color: $black-soft;
+        }
+    }
+}
