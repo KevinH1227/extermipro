@@ -1,9 +1,0 @@
-{
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/frontend/index-2.html"
-      }
-    ]
-  }
-  
