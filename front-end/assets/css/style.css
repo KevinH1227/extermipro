@@ -1107,6 +1107,10 @@ textarea:focus {
     margin-left: 0;
 }
 
+.brand-logo {
+    height: 64px;
+}
+
 /*------- header top style end -------*/
 /*------ main menu start ------*/
 .main-menu ul {
