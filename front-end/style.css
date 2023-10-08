@@ -1,3 +1,9 @@
+:root {
+  --green: #79CA2D;
+  /* --orange: #var(--green); */
+  --black: #000000;
+  --navy: #022346;
+}
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 #outerCraneContainer {
   position: absolute;
@@ -7,7 +13,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  box-shadow: inset 0 -60px 0 -30px #ff6347;
+  box-shadow: inset 0 -60px 0 -30px #var(--green);
 }
 .buildings {
   height: 84.9673202614379px;
@@ -17,7 +23,7 @@
 .buildings div {
   height: inherit;
   width: 42.48366013071895px;
-  background: #ff6347;
+  background: #var(--green);
   position: absolute;
   bottom: 10%;
 }
@@ -94,7 +100,7 @@
 }
 .crane .line {
   border: none;
-  background: #ff6347;
+  background: #var(--green);
   outline: 1px solid transparent;
   z-index: 0;
 }
@@ -122,7 +128,7 @@
   display: block;
   bottom: 0;
   left: -4500%;
-  border: solid 1px #ff6347;
+  border: solid 1px #var(--green);
 }
 .craneTwo .line.lineThree:after {
   height: 0.1em;
@@ -135,13 +141,13 @@
   width: 5%;
   right: 25%;
   z-index: 1;
-  background: linear-gradient(to top, #ff6347, #f29b8b);
+  background: linear-gradient(to top, #var(--green), #f29b8b);
 }
 .craneTwo .stand {
-  background: linear-gradient(to top, #ff6347, #f19483);
+  background: linear-gradient(to top, #var(--green), #f19483);
 }
 .craneThree .stand {
-  background: linear-gradient(to top, #ff6347, #f08c7b);
+  background: linear-gradient(to top, #var(--green), #f08c7b);
 }
 .weight {
   height: 20%;
@@ -217,7 +223,7 @@
   left: 20%;
 }
 .craneOne div {
-  border: solid 1px #ff6347;
+  border: solid 1px #var(--green);
 }
 .craneOne .line {
   height: 1px;
@@ -233,7 +239,7 @@
   z-index: -1;
 }
 .craneTwo div {
-  border: solid 1px #ff6347;
+  border: solid 1px #var(--green);
 }
 .craneTwo .line {
   height: 0.769230769230769px;
@@ -257,7 +263,7 @@
   z-index: -1;
 }
 .craneThree div {
-  border: solid 1px #ff6347;
+  border: solid 1px #var(--green);
 }
 .craneThree .line {
   height: 0.5px;
