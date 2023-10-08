@@ -5,11 +5,11 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
         $email = filter_var(trim($_POST["email_address"]), FILTER_SANITIZE_EMAIL);
-        $date = trim($_POST["date"]);
+        // $service = trim($_POST["service"]);
         $phone = trim($_POST["phone"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($date) OR empty($phone) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($phone) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -18,7 +18,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "uzzalhossain.ht@gmail.com";
+        $recipient = "info@extermipro.ca";
 
         // Set the email subject.
         $subject = "Appointment Request From $name";
@@ -26,7 +26,7 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Date: $date\n\n";
+        // $email_content .= "Service: $service\n\n";
         $email_content .= "Phone: $phone\n\n";
 
         // Build the email headers.
