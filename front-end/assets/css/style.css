@@ -4013,4 +4013,14 @@ only screen and (max-width: 767.98px) {
 .bug-logo {
     height: 64px;
 }
+
+
+/* trying to change the size of the cockroach on back-up.html */
+.size-control-icon {
+    max-width: 60%;
+    max-height: 50%;
+}
+.size-control {
+    max-width: 18%;
+}
 /*----- footer section end -----*/
