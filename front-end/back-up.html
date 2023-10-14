@@ -281,7 +281,47 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
+                        <!-- -- -->
+                         <!-- form trial -->
                         <div class="appoint-form-wrapper appoint-form-wrapper__style-2 bg-img" data-bg="assets/img/bg/bg-shape.png">
+                            <h2>Contact Information</h2>
+
+                            <form id="contactForm" class="appoint-form-inner">
+                                <div class="customer-appoint-box customer-appoint-box__style-2"></div>
+                                    <div class="appoint-name align-left">
+                                        <label  for="name">Name:</label>
+                                        <input type="text" id="name"  class="app-txt-field"  name="name" required><br><br>
+                                    </div>
+                                        <div class="appoint-email">
+                                            <div class="align-left appoint-phone">
+                                            <label for="phone">Phone Number:</label>
+                                            <input type="tel" id="phone" name="phone" required><br><br>
+                                        </div>
+                                    </div>
+                                    <button type="button" id="submitButton" class="btn btn-app">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                            <script>
+                            document.getElementById("submitButton").addEventListener("click", function() {
+                                var name = document.getElementById("name").value;
+                                var phone = document.getElementById("phone").value;
+                            
+                                if (name && phone) {
+                                    var emailSubject = "Contact Request from " + name + " - Phone: " + phone;
+                                    var emailBody = "Hi, my name is " + name + " " + "Please contact me at " + phone;
+                            
+                                    // Replace 'your-email@example.com' with the recipient email address
+                                    window.location.href = "mailto:info@extermipro.ca?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
+                                } else {
+                                    alert("Please fill in both name and phone number before submitting.");
+                                }
+                            });
+                            </script>
+                         <!-- form trial -->
+
+                         <!-- original form -->
+                        <!-- <div class="appoint-form-wrapper appoint-form-wrapper__style-2 bg-img" data-bg="assets/img/bg/bg-shape.png">
                             <h3 class="appoint-title">Ready To Book</h3>
                             <form id="contact-form" class="appoint-form-inner" action="assets/php/appointment-two.php" method="post">
                                 <div class="customer-appoint-box customer-appoint-box__style-2">
@@ -296,18 +336,20 @@
                                     </div> -->
                                     <!-- <div class="appoint-phone">
                                         <input name="phone" class="app-txt-field" type="text" placeholder="Phone">
-                                    </div> -->
-                                </div>
-                                <div class="appoint-btn">
-                                    <a href="mailto:info@extermipro.ca" class="btn btn-app">Email Now</a>
-                                    <!-- <button type="submit" class="btn btn-app">SEND NOW</button> -->
+                                    </div>
+                                    
+                                    </div>
+                                        <div class="appoint-btn">
+                                        <a href="mailto:info@extermipro.ca" class="btn btn-app">Email Now</a>
+                                        <button type="submit" class="btn btn-app">SEND NOW</button> -->
+                                        <!-- original form -->
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <p class="form-messege"></p>
-                    </div>
+                    </div>      
                 </div>
             </div>
         </section>
@@ -815,6 +857,7 @@
                                         <div class="mailchimp-error"></div>mailchimp-error end
                                     </div> -->
                                     <!-- mailchimp-alerts end -->
+                                   
                                 </div>
                                 <div class="widget-social-link">
                                     <a href="https://www.facebook.com/profile.php?id=61551324419038"><i class="fa fa-facebook"></i></a>

@@ -2723,7 +2723,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .service-item2 {
-    height: 250px;
+    height: 290px;
     padding: 55px 30px;
     text-align: center;
     border-radius: 5px;
@@ -4063,5 +4063,9 @@ only screen and (max-width: 767.98px) {
 
 .darken-image {
     opacity: 1.5;
+}
+/* form */
+.align-left {
+    text-align: left;   
 }
 /*----- footer section end -----*/
