@@ -1,3 +1,22 @@
 {
-  "title": "ExtermiPro - Service de lutte antiparasitaire"
+  "title": "ExtermiPro - Service de lutte antiparasitaire",
+  "home": "ACCUEIL",
+  "about": "À PROPOS DE NOUS",
+  "service": "SERVICES",
+  "blog": "BLOG",
+  "slider": "Service de lutte contre les nuisibles N°1",
+  "slider-1": "PROFITEZ DE VOTRE MAISON TOTALEMENT SANS NUISIBLES",
+  "about our services": "À propos de nos services",
+  "about-content": "Chez ExtermiPro, nos propriétaires gèrent personnellement la visite d'extermination. Avec notre engagement que \"Votre maison est notre priorité\", nous réalisons un travail méticuleux et faisons le maximum pour nos clients. Faites-nous confiance pour protéger votre maison des nuisibles, sachant que nos propriétaires dévoués sont en première ligne, garantissant votre tranquillité d'esprit.",
+  "contact": "Informations de contact",
+  "name": "Nom",
+  "phone": "Téléphone",
+  "submit": "SOUMETTRE",
+  "pest": "Lutte Antiparasitaire",
+  "pest-content": "Découvrez les biographies des parasites les plus fréquemment mentionnés en cliquant sur leurs icônes. Explorez leurs habitudes, les menaces qu'ils représentent, et plongez dans leurs univers fascinants.",
+  "cockroaches": "CAFARDS",
+  "wasps": "GUÊPES",
+  "rodents": "RONGEURS",
+  "ants": "FOURMIS",
+  "bed-bugs": "PUNAISES DE LIT"
 }

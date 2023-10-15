@@ -1,3 +1,22 @@
 {
-  "title": "ExtermiPro - Pest Control Service"
+  "title": "ExtermiPro - Pest Control Service",
+  "home": "HOME",
+  "about": "ABOUT US",
+  "service": "SERVICES",
+  "blog": "BLOG",
+  "slider": "No 1 Pest Control Services",
+  "slider-1": "ENJOY YOUR HOME TOTALLY PEST FREE",
+  "about our services": "About Our Services",
+  "about-content": "At ExtermiPro, our owners personally handle the extermination visit. With our commitment to \"Your home is our priority,\" we deliver meticulous work and go the extra mile for our clients. Trust us to safeguard your home from pests, knowing that our dedicated owners are on the front lines, ensuring your peace of mind.",
+  "contact": "Contact Information",
+  "name": "Name",
+  "phone": "Phone number",
+  "submit": "SUBMIT",
+  "pest": "Pest Problem",
+  "pest-content": "Explore biographies of the most asked-about pests by clicking on their icons. Discover their habits, threats, and fascinating insights into their worlds.",
+  "cockroaches": "COCKROACHES",
+  "wasps": "WASPS",
+  "rodents": "RODENTS",
+  "ants": "ANTS",
+  "bed-bugs": "BED-BUGS"
 }
