@@ -1,3 +1,10 @@
+/* css for index.html on construction site */
+:root {
+  /* --green: #79CA2D; */
+  /* --orange: #ff6347; */
+  --black: #000000;
+  --navy: #022346;
+}
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 #outerCraneContainer {
   position: absolute;

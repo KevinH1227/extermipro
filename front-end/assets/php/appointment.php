@@ -18,7 +18,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "uzzalhossain.ht@gmail.com";
+        $recipient = "info@extermipro.ca";
 
         // Set the email subject.
         $subject = "Appointment Request From $name";
