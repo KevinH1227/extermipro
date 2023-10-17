@@ -1,3 +1,12 @@
+function getAssetPath() {
+  console.log(window.location.pathname.split('/'))
+  if (window.location.pathname.split('/').length > 3) {
+      return '../assets/js/languages/';
+  }
+  return 'assets/js/languages/';
+}
+
+
 function updateContent(langData) {
   document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
@@ -11,8 +20,10 @@ function setLanguagePreference(lang) {
 } 
 
 async function fetchLanguageData(lang) {
-  const response = await fetch(`assets/js/languages/${lang}.json`);
-  return response.json();
+    const assetPath = getAssetPath();
+    console.log(assetPath)
+    const response = await fetch(`${assetPath}${lang}.json`);
+    return response.json();
 }
 
 async function changeLanguage(lang) {
